@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./index.css"
 import Cards from './Cards'
 import axios from "axios";
+import Navbar from "./components/Navbar";
 
 
 const App = () => {
@@ -24,15 +25,17 @@ setError(true)
   }, []);
   return (
     <>
-  <h1 className='text-center text-2xl font-sans bg-neutral-200-100 hover:bg-amber-900 duration-300 p-6'>Olx Cards </h1>
-  {loading && <h1>
-<div class="loader">
+  <Navbar/>
+  {loading && <div className="flex items-center justify-center h-100">
+    <div className="loader ">
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
 </div>
-</h1>
+  </div>
+
+
   }
   {error && <h1>Something Went Wrong...</h1>
   }

@@ -1,5 +1,8 @@
 @import "tailwindcss";
-
+*{
+ margin: 0;
+ box-sizing: border-box;
+}
 .heart-container {
     --heart-color: rgb(0, 0, 0);
     position: relative;
@@ -89,12 +92,16 @@
 
   /* loading */
 
-  /* From Uiverse.io by AbanoubMagdy1 */ 
+
 .loader {
     --dim: 3rem;
     width: var(--dim);
     height: var(--dim);
-    position: relative;
+    /* position: relative; */
+  
+
+
+
     animation: spin988 2s linear infinite;
   }
   
