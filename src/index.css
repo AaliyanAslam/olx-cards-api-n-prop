@@ -1,4 +1,50 @@
 @import "tailwindcss";
+
+@media (max-width: 1017px) {
+    input {
+        width: 23rem;
+    }
+}
+@media (max-width: 989px) {
+    input {
+        width: 21rem;
+    }
+}
+@media (max-width: 950px) {
+    input {
+        width: 18rem;
+    }
+}
+@media (max-width: 901px) {
+    input {
+        width: 16rem;
+    }
+}
+@media (max-width: 873px) {
+    input {
+       display: none;
+    }
+    .button{
+        display: none;
+    }
+}
+@media (max-width: 577px) {
+   ul{
+    gap: 18px;
+   }
+}
+@media (max-width: 473px) {
+   ul{
+    gap: 15px;
+
+   }
+   li{
+    font-size: small;
+   }
+}
+
+
+
 *{
  margin: 0;
  box-sizing: border-box;
@@ -156,3 +202,28 @@
       transform: scale(1) rotate(360deg);
     }
   }
+
+
+  
+.button {
+    padding: 8px 20px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: rgb(68, 68, 68);
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    border: 2px rgb(199, 194, 194) solid;
+    margin-left: 5px;
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+  }
+  
+  .button-span {
+    color: #aaa;
+  }
+  

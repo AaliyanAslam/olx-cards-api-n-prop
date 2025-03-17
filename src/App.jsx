@@ -28,10 +28,10 @@ setError(true)
   <Navbar/>
   {loading && <div className="flex items-center justify-center h-100">
     <div className="loader ">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
+    <div className="circle"></div>
 </div>
   </div>
 
@@ -43,9 +43,13 @@ setError(true)
 
   {
   products && products.map(item=> {
-  return <Cards key={item.id} title={item.title} image={item.thumbnail
+  return <Cards key={item.id} title={item.title} stock={item.
+    availabilityStatus} image={item.thumbnail
   } />
     })
+
+      
+      
   }
 
 </div>
